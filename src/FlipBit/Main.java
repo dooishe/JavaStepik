@@ -6,5 +6,9 @@ public class Main {
 	}
 	static int flipBit(int value, int bitIndex) {
     return value ^ (1 << (bitIndex-1));
+		/*
+		another version
+		return value ^ ((int) Math.pow(2, (bitIndex-1)));
+		 */
 }
 }
