@@ -2,13 +2,13 @@ package IsPolindrom;
 
 public class Main {
   public static void main(String[] args) {
-   
+   System.out.println(isPalindrome("  text! ,3223fa;"));
+   System.out.println(isPalindrome("к1 2б,  б21 к!"));
     
   }
   public static boolean isPalindrome(String text) {
     String editedString = text.replaceAll("\\p{Punct}", "").replaceAll("\\s+", "");
-    StringBuilder str = new StringBuilder(editedString);
-    String reverseEditedString = str.reverse().toString();
+    String reverseEditedString = new StringBuilder(editedString).reverse().toString();
     return editedString.equalsIgnoreCase(reverseEditedString); 
 }
 }
